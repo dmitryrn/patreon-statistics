@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +27,9 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1cQqphSpyFOurapszAKhAsN8SJL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,17 +57,17 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590476632458">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590477350535">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590476632458" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1590476634137">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590477350535" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1590477352499">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590476634137" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590477247547">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590477352499" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590477344713">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590477247547" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590477344713" />
   </component>
 </project>

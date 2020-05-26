@@ -1,0 +1,13 @@
+version: '2.0'
+services:
+  app:
+    build: .
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_USER: ${PG_USERNAME}
+      POSTGRES_DB: ${PG_DBNAME}
+    volumes:
+      - "${PG_DATA_VOLUME}:/var/lib/postgresql/data"
