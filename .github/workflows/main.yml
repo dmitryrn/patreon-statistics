@@ -13,12 +13,11 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        envs: PG_DATA_VOLUME,PG_PASSWORD,PG_USERNAME,PG_DBNAME
         script: |
           env
           cd ~/projects/patreon-statistics
           git pull
-          PG_DATA_VOLUME=${{ secrets.PG_DATA_VOLUME }} \
+          PG_DATA_VOLUME=/home/$(whoami)/postgres/patreon-statistics \
           PG_PASSWORD=${{ secrets.PG_PASSWORD }} \
           PG_USERNAME=${{ secrets.PG_USERNAME }} \
           PG_DBNAME=${{ secrets.PG_DBNAME }} \
