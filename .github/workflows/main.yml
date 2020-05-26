@@ -18,8 +18,7 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        envs:
-          - PG_DATA_VOLUME,PG_PASSWORD,PG_USERNAME,PG_DBNAME
+        envs: PG_DATA_VOLUME,PG_PASSWORD,PG_USERNAME,PG_DBNAME
         script: |
           cd ~/projects/patreon-statistics
           git pull
