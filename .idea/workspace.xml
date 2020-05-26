@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="Update actions">
+    <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -104,10 +104,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590480446058">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590481082318">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590480446058" />
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590481082318" />
     <state x="100" y="100" width="1592" height="920" key="DiffContextDialog" timestamp="1590480567812">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -121,9 +121,9 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590480346889" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590481044408">
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590481070293">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590481044408" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590481070293" />
   </component>
 </project>

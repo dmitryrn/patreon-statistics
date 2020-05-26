@@ -8,16 +8,16 @@ jobs:
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
+      env:
+        PG_DATA_VOLUME: ${{ secrets.PG_DATA_VOLUME }}
+        PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
+        PG_USERNAME: ${{ secrets.PG_USERNAME }}
+        PG_DBNAME: ${{ secrets.PG_DBNAME }}
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        env:
-          PG_DATA_VOLUME: ${{ secrets.PG_DATA_VOLUME }}
-          PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
-          PG_USERNAME: ${{ secrets.PG_USERNAME }}
-          PG_DBNAME: ${{ secrets.PG_DBNAME }}
         envs: PG_DATA_VOLUME,PG_PASSWORD,PG_USERNAME,PG_DBNAME
         script: |
           env
