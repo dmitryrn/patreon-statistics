@@ -11,6 +11,6 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        password: ${{ secrets.SSH_PASSWORD }}
+        fingerprint: ${{ secrets.SSH_PUBKEY }}
         port: ${{ secrets.SSH_PORT }}
         script: whoami
