@@ -22,4 +22,6 @@ jobs:
         script: |
           cd ~/projects/patreon-statistics
           git pull
+          pwd
+          ls -la
           docker-compose up --build
