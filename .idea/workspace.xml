@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-    </list>
+    <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -46,6 +45,7 @@
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Update actions" />
     <option name="LAST_COMMIT_MESSAGE" value="Update actions" />
@@ -54,17 +54,17 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590479511765">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590479848251">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590479511765" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1590479513372">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590479848251" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1590479849572">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590479513372" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590479585634">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590479849572" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590479844628">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590479585634" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590479844628" />
   </component>
 </project>

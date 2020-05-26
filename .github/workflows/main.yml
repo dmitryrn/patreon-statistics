@@ -22,5 +22,4 @@ jobs:
         script: |
           cd ~/projects/patreon-statistics
           git pull
-          which docker-compose
-          docker-compose up --build
+          /home/$(whoami)/.linuxbrew/bin/docker-compose up --build
