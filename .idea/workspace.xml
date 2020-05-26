@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c92adea-9501-478a-be46-e10f0b80f55b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +45,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Update actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update actions" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590475362988">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2" timestamp="1590476632458">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590475362988" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590475282617">
+    <state x="482" y="0" width="828" height="1120" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590476632458" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1590476634137">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590475282617" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590476634137" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1590477247547">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590477247547" />
   </component>
 </project>
