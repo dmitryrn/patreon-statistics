@@ -1,4 +1,4 @@
-package public_api
+package transport
 
 import (
 	"database/sql"

@@ -2,13 +2,12 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	_ "github.com/lib/pq"
 	"log"
 	http "net/http"
 	DB "patreon-statistics/app/db"
-	public_api "patreon-statistics/app/public-api"
+	transport "patreon-statistics/app/transport"
 	"strconv"
 	"strings"
 	"time"
@@ -19,7 +18,7 @@ func main() {
 
 	db := DB.InitDbConnection()
 
-	go startServer(db)
+	go transport.StartServer(db)
 
 	update(db)
 	for {
@@ -28,18 +27,6 @@ func main() {
 			update(db)
 		}
 	}
-}
-
-func startServer(db *sql.DB) {
-	public_api.RegisterRoutes(db)
-
-	http.HandleFunc("/", serveFrontend)
-	err := http.ListenAndServe(":8080", nil)
-	log.Fatal("failed to start http server ", err)
-}
-
-func serveFrontend(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "%v", "test")
 }
 
 func update(db *sql.DB) {
@@ -58,12 +45,10 @@ func update(db *sql.DB) {
 	}
 
 	count := doc.Find("[data-tag=\"CampaignPatronEarningStats-patron-count\"] h2").Text()
-	println(count)
-
 	earnings := doc.Find("[data-tag=\"CampaignPatronEarningStats-earnings\"] h2").Text()
-	println(earnings)
+
+	println(count, earnings)
 	earningsInt, err := strconv.ParseInt(normalizeAmerican(removeDollarSign(earnings)), 10, 64)
-	println(earningsInt)
 
 	rows, err := db.Query("insert into statistics (creator_id, patrons_count, revenues, created_at) values ($1, $2, $3, now())", 1, count, earningsInt)
 	if err != nil {
