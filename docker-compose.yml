@@ -2,6 +2,8 @@ version: '2.0'
 services:
   app:
     build: .
+    ports:
+      - "8080:8080"
   db:
     image: postgres
     restart: always
@@ -14,4 +16,4 @@ services:
       POSTGRES_USER: ${PG_USERNAME}
       POSTGRES_DB: ${PG_DBNAME}
     volumes:
-      - /var/lib/postgresql/data
+      - /var/lib/docker/volumes/f48bb81ff45a0c6d17f8af7781e8a643cb76bb3061f6491197d9e23b08cbcd72/_data:/var/lib/postgresql/data

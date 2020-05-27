@@ -23,7 +23,7 @@ func GetCreators(db *sql.DB, w http.ResponseWriter, r *http.Request) {
 
 	for rows.Next() {
 		crtr := creator.Creator{}
-		err := rows.Scan(crtr.Id, crtr.PatreonId, crtr.CreatedAt)
+		err := rows.Scan(&crtr.Id, &crtr.PatreonId, &crtr.CreatedAt)
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			log.Println("creators: error in scan loop ", err)

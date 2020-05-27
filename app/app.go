@@ -34,7 +34,8 @@ func startServer(db *sql.DB) {
 	public_api.RegisterRoutes(db)
 
 	http.HandleFunc("/", serveFrontend)
-	http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	log.Fatal("failed to start http server ", err)
 }
 
 func serveFrontend(w http.ResponseWriter, r *http.Request) {
@@ -44,11 +45,11 @@ func serveFrontend(w http.ResponseWriter, r *http.Request) {
 func update(db *sql.DB) {
 	client := http.Client{}
 	resp, err := client.Get("https://www.patreon.com/HubertMoszka")
-	defer resp.Body.Close()
 	if err != nil {
 		log.Println("error fetching page ", err)
 		return
 	}
+	defer resp.Body.Close()
 
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
@@ -65,11 +66,11 @@ func update(db *sql.DB) {
 	println(earningsInt)
 
 	rows, err := db.Query("insert into statistics (creator_id, patrons_count, revenues, created_at) values ($1, $2, $3, now())", 1, count, earningsInt)
-	defer rows.Close()
 	if err != nil {
 		log.Println("failed to insert update to statistics ", err)
 		return
 	}
+	defer rows.Close()
 }
 
 func normalizeAmerican(str string) string {
