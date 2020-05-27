@@ -6,8 +6,6 @@
 	.then(_creators => {
 		creators = _creators
 	})
-
-	// $: creators = _creators
 </script>
 
 <main>
