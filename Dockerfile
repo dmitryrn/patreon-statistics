@@ -8,6 +8,6 @@ COPY . .
 RUN go get -d -v ./...
 RUN go install -v ./...
 
-RUN go build
+RUN go build -o patreon-statistics ./app
 
-CMD ["./wait-for-it.sh", "db:5432", "--", "patreon-statistics"]
+CMD ["./wait-for-it.sh", "db:5432", "--", "./patreon-statistics"]
