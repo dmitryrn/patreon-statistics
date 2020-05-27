@@ -1,5 +1,7 @@
 FROM golang:alpine3.11
 
+RUN apk update && apk add bash
+
 WORKDIR /go/src/app
 COPY . .
 
@@ -8,4 +10,4 @@ RUN go install -v ./...
 
 RUN go build
 
-CMD ["patreon-statistics"]
+CMD ["./wait-for-it.sh", "db:5432", "--", "patreon-statistics"]
