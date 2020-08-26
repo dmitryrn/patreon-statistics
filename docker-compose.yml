@@ -9,11 +9,12 @@ services:
     restart: always
     ports:
       - "5432:5432"
-    expose:
-      - "5432"
     environment:
-      POSTGRES_PASSWORD: ${PG_PASSWORD}
-      POSTGRES_USER: ${PG_USERNAME}
-      POSTGRES_DB: ${PG_DBNAME}
+      POSTGRES_PASSWORD: test
+      POSTGRES_USER: test
+      POSTGRES_DB: test
     volumes:
-      - /var/lib/docker/volumes/f48bb81ff45a0c6d17f8af7781e8a643cb76bb3061f6491197d9e23b08cbcd72/_data:/var/lib/postgresql/data
+      - patreon-statistics:/var/lib/pgsql
+
+volumes:
+  patreon-statistics:
